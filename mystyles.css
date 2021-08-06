@@ -1,0 +1,98 @@
+:root {
+  --blue: rgb(29, 161, 242);
+  --blue-dark: rgb(26, 145, 218);
+  --gap: 1em;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: var(--gap);
+  padding-top: var(--gap);
+
+  text-align: center;
+  
+  color: rgb(15, 20, 25);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body > * {
+  width: 90vw;
+  max-width: 30em;
+}
+
+main {
+  border: 1px solid #ccc;
+  padding: var(--gap);
+}
+
+h1 {
+  font-weight: 800;
+}
+
+img {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+input {
+  font-size: 1.2em;
+  text-align: center;
+  border: 1px solid rgb(235, 238, 240);
+  border-radius: 0.5em;
+  padding: 1em 2em;
+}
+
+button {
+  background: var(--blue);
+  color: #fff;
+  border: 0;
+  padding: 1em 2em;
+  border-radius: 9999px;
+  font-size: 1.2em;
+  box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+  
+  outline: none;
+  align-self: center;
+}
+
+button:focus,
+button:hover,
+button:active {
+  background: var(--blue-dark);
+}
+
+input:placeholder-shown ~ button {
+  opacity: 0.5;
+  background: var(--blue) !important;
+}
+
+p {
+  font-style: italic;
+}
+
+a, a:visited {
+  color: var(--blue);
+}
+
+output:empty {
+  display: none;
+}
+
+output {
+  font-weight: 800;
+  padding: 1em;
+  background: rgba(255 255 205 / 0.8);
+}
