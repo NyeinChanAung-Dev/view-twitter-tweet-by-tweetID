@@ -7,6 +7,6 @@ document.querySelector('form').addEventListener('submit', e => {
   if (!tweetId) return;
   
   document.querySelector('output').innerHTML = `
-    <br /><a href="https://twitter.com/anyuser/status/${tweetId}" target="_blank" rel="noopener noreferrer">https://twitter.com/anyuser/status/${tweetId}</a>
+    <br /><br /><a href="https://twitter.com/anyuser/status/${tweetId}" target="_blank" rel="noopener noreferrer">https://twitter.com/${tweetId}</a>
   `;
 })
